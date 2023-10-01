@@ -52,7 +52,7 @@ class MultiStoryHouse(House):
         floor_time = 3 #Время прохождения лифтом одного этажа
         floors = abs(floor - self.elevator_floor) #Количество проденных этажей
         total_time = floors * floor_time
-        print(f'Лифт отправляется с этажа {sself.elevator_floor} на этаж {floor}')
+        print(f'Лифт отправляется с этажа {self.elevator_floor} на этаж {floor}')
         time.sleep(total_time)
         print('Лифт приехал')
         self.elevator_floor = floor
